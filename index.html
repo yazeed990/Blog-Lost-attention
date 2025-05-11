@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>رحلة تيه رقمي في كل ليله</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style type="text/tailwindcss">
+      .animate-fadeIn {
+        animation: fadeIn 0.3s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.96);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-br from-slate-400 to-slate-950 min-h-screen flex flex-col items-center justify-start p-6 font-sans mb-6"
+  >
+    <div
+      class="overlay fixed inset-0 bg-transparent bg-opacity-60 backdrop-blur-sm z-40 hidden"
+    ></div>
+    <img
+      src="/public/hours-scrolling.png"
+      class="absolute top-2 m-0 p-0 h-1/2 max-w-full mx-auto rounded-xl shadow-2xl -z-10"
+      alt=""
+    />
+
+    <section
+      class="slide bg-white rounded-xl shadow-lg max-w-3xl w-full p-8 text-right space-y-6 mt-96"
+    >
+      <h2 class="text-3xl font-bold text-gray-800">رحلة تيه رقمي في كل ليله</h2>
+      <p class="text-lg text-gray-700 leading-loose">
+        تبدأ القصة من لحظة ملل، فاتفتح جوالك، تقرر تشوف "بس شوي"، Reels، Shorts،
+        Explore... وكل وحدة تنقلك للي بعدها. فجأة، الساعة صارت 2 صباحا! ووراك
+        صلاة، ووراك مهام، بس العقل خلاص تشبع من التشتت.
+      </p>
+      <p class="text-lg text-gray-700 leading-loose">
+        المشكل في الأمر إنك ما تطلع من الجوال مبسوط (الا ماندر)، تطلع تعبان،
+        متوتر، حاسس بضيقة... لأنك تعرف داخليًا إنك أضعت وقتك. وهنا السؤال:<span
+          class="font-bold"
+        >
+          ليه نرجع ونعيد نفس الحلقة كل يوم؟ ليه نسلم عقولنا للعبث؟</span
+        >
+      </p>
+      <p class="text-lg text-gray-700 leading-loose">
+        الرسول ﷺ قال:
+        <span class="font-semibold text-cyan-600"
+          >(( نعمتان مغبون فيهما كثير من الناس: الصحة والفراغ )) </span
+        >. واللي جالس يصير اليوم، إن الفراغ يُقتل باللا شيء، وتضيع علينا فرص
+        العبادة، العلم، وحتى الراحة النفسية.
+      </p>
+      <p class="text-lg text-gray-700 leading-loose">
+        مو مطلوب إنك تعتزل التقنية، لكن المطلوب إنك تسترجع السيطرة. حدد وقت، حط
+        هدف، اسأل نفسك: وش أبغى أطلع فيه من هالساعة؟ هل بزيد علمي؟ أو بس أبغى
+        أضيع؟
+      </p>
+      <p class="text-lg text-gray-700 leading-loose">
+        خل عنك المجاملة، ترى هذي حرب على وقتك، وصدقني: ما في أحد حريص على وقتك
+        أكثر منك. فاستيقظ، وخل الجوال أداة، لا سيد.
+      </p>
+      <div class="text-center mt-8">
+        <span class="text-sm text-gray-500"
+          >اللهم اجعل أوقاتنا شاهدة لنا لا علينا<br />
+          (وكلنا هذا الرجل، الا من رحم ربي..).</span
+        >
+      </div>
+    </section>
+
+    <div class="notify w-full flex justify-center gap-23 items-center">
+      <div class="mt-10">
+        <button
+          class="show-modal bg-slate-700 text-white text-lg font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
+        >
+          ايقاف.. <i class="text-red-600 fa-brands fa-youtube"></i>
+        </button>
+      </div>
+
+      <div
+        class="modal fixed inset-0 flex items-center justify-center z-50 hidden"
+      >
+        <div
+          class="bg-white rounded-lg shadow-xl max-w-2xl w-full p-6 relative text-right animate-fadeIn"
+        >
+          <button
+            class="close-modal absolute top-3 left-4 text-4xl text-gray-600 hover:text-gray-800 transition"
+          >
+            &times;
+          </button>
+          <h1 class="text-2xl font-bold mb-4 text-gray-800">استعن بالله</h1>
+          <p class="text-gray-700 leading-relaxed text-xl">
+            ١. احذف التطبيق، وادخل فقط من المتصفح مع تسجيل خروج.<br />
+            ٢. احذف "المقترحات" باستخدام إضافة مثل Unhook.<br />
+            ٣. لا تتابع قنوات ترفيهية. خلك مشترك فقط بقنوات تعليمية تنفعك
+            فعليًا.<br />
+            ٤. حط مؤقت شاشة (١٠ دقايق فقط) وفعّل تنبيهات Screen Time.<br />
+            ٥. إذا فتحت يوتيوب بدون هدف واضح → لازم تصدّق بمبلغ بسيط مباشرة.<br /><br />
+            <span class="text-green-500"
+              >{ أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَاكُمْ عَبَثًا }</span
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <button
+          class="show-modal bg-gray-500 text-gray-800 text-lg font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
+        >
+          ايقاف..
+          <i class="p-1 rounded-md bg-black text-white fa-brands fa-tiktok"></i>
+        </button>
+      </div>
+
+      <div
+        class="modal fixed inset-0 flex items-center justify-center z-50 hidden"
+      >
+        <div
+          class="bg-white rounded-lg shadow-xl max-w-2xl w-full p-6 relative text-right animate-fadeIn"
+        >
+          <button
+            class="close-modal absolute top-3 left-4 text-4xl text-gray-600 hover:text-gray-800 transition"
+          >
+            &times;
+          </button>
+          <h1 class="text-2xl font-bold mb-4 text-gray-800">
+            تيك توك يسحبك لنفس الدوامة
+          </h1>
+          <p class="text-gray-700 leading-relaxed text-lg">
+            ١. احذف التطبيق نهائيًا. لا تدخل من المتصفح حتى.<br />
+            ٢. إذا مستحيل تتركه، حط مؤقت ٥ دقايق فقط، واحذف الحساب الترفيهي.<br />
+            ٣. اشغل وقتك فورًا بعد الحذف: شغل بودكاست، اقرأ، امشِ، كلم صديق.<br />
+            ٤. اربط كل فتحة لتطبيق بتسبيحة أو صدقة تلقائية.<br /><br />
+            <span class="text-green-500"
+              >{وَالَّذِينَ هُمْ عَنِ اللَّغْوِ مُعْرِضُونَ }</span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="mt-10">
+        <button
+          class="show-modal bg-white text-gray-800 text-lg font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
+        >
+          أفتح التنبيه
+        </button>
+      </div>
+
+      <div
+        class="modal fixed inset-0 flex items-center justify-center z-50 hidden"
+      >
+        <div
+          class="bg-white rounded-lg shadow-xl max-w-2xl w-full p-6 relative text-right animate-fadeIn"
+        >
+          <button
+            class="close-modal absolute top-3 left-4 text-4xl text-gray-600 hover:text-gray-800 transition"
+          >
+            &times;
+          </button>
+          <h1 class="text-2xl font-bold mb-4 text-gray-800">
+            توقف للحظة يا صديقي
+          </h1>
+          <p class="text-gray-700 leading-relaxed text-lg">
+            والله إننا نضيع أعمارنا أمام شاشة صغيرة<br />
+            نقلب من Reels لـ Shorts لـ Explore... بدون هدف، بدون ذكر، بدون أثر.
+            لحظات العمر ما ترجع، وساعات الليل ما تتعوض. وكل يوم تقول: خمس دقايق
+            بس، وفجأة تلاقي نفسك أضعت ثلاث ساعات أو أكثر في لا شيء.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

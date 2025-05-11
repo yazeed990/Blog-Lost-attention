@@ -1,0 +1,13 @@
+@media (max-width: 30em) {
+  .notify {
+    gap: 1.25rem;
+    background-color: burlywood;
+  }
+}
+
+.slide {
+  margin-top: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
